@@ -1,15 +1,25 @@
+/* Centers the container */
+.background{
+    display: flex;
+
+    min-width: 100vw;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
 .container{
     display: flex;
 
-    min-height: 100vh;
-    min-height: 100vh;
+    min-height: 75vh;
+    min-width: 75vw;
     border: 10px solid black;
 
     /* Sets the direction to top to bottom. */
     flex-direction: column;
 
     /* Makes items stay in the center of the screen */
-    align-items:center;
+    align-items: center;
 
     /* Creates space between all items */
     justify-content: space-evenly;
@@ -38,3 +48,32 @@
     /* For debug */
     border: 10px solid green;
 }
+
+@media screen and (width <= 375px),(height <= 375px) {
+
+    .container{
+        border: 10px solid orange;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .header{
+        font-size: 40px;
+    }
+
+    #username-input{
+        width: 100px;
+    }
+
+    #password-input{
+        width: 100px;
+    }
+}
+
+@media screen and (width <= 300px),(height <= 300px) {
+    .container{
+        border: 10px solid green;
+    } 
+}
+
