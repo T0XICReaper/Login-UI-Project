@@ -6,6 +6,8 @@
     min-height: 100vh;
     justify-content: center;
     align-items: center;
+
+    background-color: #F7ECE1 ;
 }
 
 .container{
@@ -13,7 +15,7 @@
 
     min-height: 75vh;
     min-width: 75vw;
-    border: 10px solid black;
+    background-color: #CAC4CE;
 
     /* Sets the direction to top to bottom. */
     flex-direction: column;
@@ -23,57 +25,122 @@
 
     /* Creates space between all items */
     justify-content: space-evenly;
+
+    /* Rounded Edges */
+    border-radius: 25px;
+
+    /* Shadow */
+    box-shadow: 0 0 20px #AAAAAA;
  
 }
 
 .header{
-    /* For debug */
-    border: 10px solid purple;
-
-    font-size: 50px;
-    
+    font-size: 10vh;
+    font-weight: bold;
+    color: #A93F55;
 }
 
-.username-box{
-    /* For debug */
-    border: 10px solid blue;
+.sign-in-input {
+    border: none;
+    border-bottom: .5vh solid #242038;
+    background-color: #CAC4CE;
+    width: 30vw;
+    height: 7.5vh;
+    padding: 1vh;
+    font-size: 3.5vh;
+    margin-bottom: 2.5vh;
+    margin-top: 2.5vh;
+    color: black;
+
 }
 
-.password-box{
-    /* For debug */
-    border: 10px solid red;
+/* Changes Placeholder text color */
+::placeholder{
+    color: #524958;
+    opacity: 1;
 }
 
-.sign-in-button{
-    /* For debug */
-    border: 10px solid green;
+/* Takes black border away when you click on the sign in inputs */
+.sign-in-input:focus {
+    outline: none;
 }
 
-@media screen and (width <= 375px),(height <= 375px) {
+.sign-in-button {
+    background-color: #A93F55;
+    color: white;
+    font-size: 2.5vh;
+    width: 40vw;
+    height: 5vh;
+    margin: 5vh;
+    border-radius: 25px;
+    text-align: center;
+    border: none;
+    box-shadow: 0 0 20px #AAAAAA;
+}
+.sign-in-button:hover{
+    background-color: #863242;
+}
+.sign-in-button:active{
+    box-shadow: 0 2px 20px #3d3d3d;
+    transform: translateY(2px);
+}
 
-    .container{
-        border: 10px solid orange;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        align-items: center;
-    }
-
+/* Resize all elements correctly */
+@media screen and (width <= 650px){
     .header{
-        font-size: 40px;
+        font-size: 10vw;
     }
 
-    #username-input{
-        width: 100px;
+    .sign-in-input{
+        font-size: 3.5vw;
     }
-
-    #password-input{
-        width: 100px;
+    .sign-in-button{
+        font-size: 2.5vw;
     }
 }
+@media screen and (width <= 450px) {
+    .header{
+        font-size: 15vw;
+    }
 
-@media screen and (width <= 300px),(height <= 300px) {
-    .container{
-        border: 10px solid green;
-    } 
+    .sign-in-input{
+        font-size: 5vw;
+    }
+    .sign-in-button{
+        font-size: 5vw;
+    }
 }
-
+@media screen and (width <= 250px) {
+    .header{
+        font-size: 18vw;
+    }
+}
+@media screen and (height <= 600px){
+    .sign-in-input{
+        height: 5vh;
+    }
+    .sign-in-button{
+        height: 7vh;
+    }
+}
+@media screen and (height <= 400px){
+    .sign-in-button{
+        height: 10vh;
+    }
+}
+@media screen and (height <= 300px){
+    .sign-in-input{
+        height: 10vh;
+    }
+    .sign-in-button{
+        height: 20vh;
+    }
+}
+@media screen and (height <= 150px){
+    .sign-in-input{
+        height: 25vh;
+    }
+    .sign-in-button{
+        height: 45vh;
+    }
+}

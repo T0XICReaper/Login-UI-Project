@@ -10,30 +10,30 @@
     <div class="background">
 
     <!-- login box container -->
+        <div class="container">
 
-    <div class="container">
-<!--         Sign in Header -->
-        <h1 class= "header">
-            Sign in
-        </h1>
+            <!--Sign in Header -->
+            <div class= "header">
+                Sign in
+            </div>
 
-        <div class="username-box">
+            <div >
                 <form action="">
-                    <input type="text" id="username-input" name="Username" placeholder="Username"><br>
+                    <input class="sign-in-input" type="text" id="username-input" name="Username" placeholder="Username" required><br>
                 </form>
-        </div>
+            </div>
 
-        <div class="password-box">
-            <form action="">
-                <input type="password" id="password-input" name="Password" placeholder="Password">
-            </form>
-        </div>
+            <div>
+                <form action="">
+                    <input class="sign-in-input" type="password" id="password-input" name="Password" placeholder="Password" required>
+                </form>
+            </div>
 
-        <div class="sign-in-button">
-            <button type="submit" form="username-box, password-box"> Sign in</button>
-        </div>
+            <div>
+                <button class="sign-in-button" type="submit" form="sign-in-input"> Sign in</button>
+            </div>
 
-    </div>
+        </div>
 
     </div>
 </body>
