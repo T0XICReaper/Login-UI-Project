@@ -37,6 +37,7 @@ body{ /* Centers the container */
 
 .sign-in-input {
     border: none; /* makes the rest of the border not there */
+    margin: 2vh;
     border-bottom: 3px solid #6A8D73;
     background-color: transparent;
     min-width: 200px;

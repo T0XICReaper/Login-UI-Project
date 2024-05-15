@@ -11,13 +11,11 @@
         <div class="container">
             <!--Sign in Header -->
             <div class= "header">Sign in</div>
-            <form>
-                <input class="sign-in-input" type="text" id="username-input" name="Username" placeholder="Username" required>
+            <form id= "sign-in-form">
+                <div><input class="sign-in-input" type="text" id="username-input" name="Username" placeholder="Username" required></div>
+                <div><input class="sign-in-input" type="password" id="password-input" name="Password" placeholder="Password" required></div>
             </form>
-            <form action="">
-                <input class="sign-in-input" type="password" id="password-input" name="Password" placeholder="Password" required>
-            </form>
-            <button class="sign-in-button" type="submit" form="sign-in-input"> Sign in</button>
+            <button class="sign-in-button" type="submit" form="sign-in-form" value="submit"> Sign in</button>
         </div>
 </body>
 </html>
